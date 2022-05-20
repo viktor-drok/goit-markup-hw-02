@@ -319,6 +319,11 @@ li {
   background-color: var(--primary-bg-color);
   height: 252px;
 }
+.map-footer:hover,
+.addres-footer:hover,
+.addres-footer:hover {
+  color: #2196f3;
+}
 
 .footer .container {
   display: flex;
