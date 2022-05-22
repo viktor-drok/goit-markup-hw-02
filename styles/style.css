@@ -83,7 +83,6 @@ li {
   padding: 32px 0px;
 }
 .link {
-  font-family: var(--primary-font-size);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -113,7 +112,6 @@ li {
 }
 
 .tel-link {
-  font-family: var(--primary-font-size);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -159,7 +157,6 @@ li {
   margin: 200px 237px 30px;
   width: 696px;
   height: 120px;
-  font-family: var(--primary-font-size);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -213,22 +210,17 @@ li {
 }
 
 .features-title {
-  font-family: var(--primary-font-size);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
 
 .features-text {
-  font-family: var(--primary-font-size);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 .work {
   flex-direction: column;
@@ -236,14 +228,11 @@ li {
   height: 386px;
   margin-bottom: 94px;
 }
-.work-title {
-  font-family: var(--primary-font-size);
-  font-weight: 700;
+.work-team-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
   margin-bottom: 50px;
 }
 .work-list {
@@ -259,18 +248,6 @@ li {
 .team {
   background-color: var(--tertiary-bg-color);
   height: 648px;
-}
-
-.team-title {
-  font-family: var(--primary-font-size);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  margin-top: 94px;
-  margin-bottom: 50px;
 }
 
 .team .container {
@@ -297,23 +274,19 @@ li {
 }
 
 .item-title {
-  font-family: var(--primary-font-size);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
 
 .item-descriptiom {
-  font-family: var(--primary-font-size);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
   margin-bottom: 30px;
 }
 
@@ -325,7 +298,7 @@ li {
   background-color: var(--primary-bg-color);
   height: 252px;
 }
-.map-footer:hover,
+
 .addres-footer:hover,
 .addres-footer:hover {
   color: var(--hover-color);
@@ -353,7 +326,6 @@ li {
 }
 
 address a {
-  font-family: var(--primary-font-size);
   font-size: 14px;
   line-height: 1.7;
   color: var(--tertiary-text-color);
@@ -394,7 +366,10 @@ address a {
   background-color: var(--secondary-button-bg-color);
   border-radius: 4px;
   border: transparent;
-  margin: 0 8px;
+}
+.filter-list button {
+  padding: 0;
+  margin-right: 8px;
 }
 
 .filter-button:hover,
@@ -412,11 +387,11 @@ address a {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
   padding: 6px 22px;
 }
 
-.filter-text:hover {
+.filter-text:hover,
+.filter-button:focus {
   color: var(--tertiary-text-color);
 }
 
@@ -439,21 +414,16 @@ address a {
 }
 
 .content-title {
-  font-family: var(--primary-font-size);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
   margin: 20px 24px 4px 24px;
 }
 
 .content-text {
-  font-family: var(--primary-font-size);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
   margin: 0px 24px 20px 24px;
 }
 
