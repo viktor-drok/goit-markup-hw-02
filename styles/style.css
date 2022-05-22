@@ -1,18 +1,28 @@
 :root {
   --primary-bg-color: #2f303a;
   --secondary-bg-color: #ffffff;
+  --tertiary-bg-color: #f5f4fa;
+  --primary-button-bg-color: #2196f3;
+  --secondary-button-bg-color: #f5f4fa;
   --primary-font-size: "Roboto", sans-serif;
   --secondary-font-size: "Raleway", sans-serif;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --tertiary-text-color: #ffffff;
   --hover-color: #2196f3;
+  --logo-color-studio: #000000;
+  --logo-color-studio-secondary: #ffffff;
+  --logo-color-web: #2196f3;
+  --link-activ: rgb(194, 55, 55);
+  --border-color: 1px solid #eeeeee;
+  --button-bg-color: #2196f3;
 }
 
 /* шрифт лого font-family: 'Raleway', sans-serif; */
 /* шрифт всього тексту font-family: 'Roboto', sans-serif; */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-size);
 }
 
 main {
@@ -25,10 +35,6 @@ h3 {
   padding: 0;
   margin: 0 auto;
   color: var(--secondary-text-color);
-}
-
-h1 {
-  margin: 0px auto;
 }
 
 a {
@@ -80,7 +86,7 @@ li {
   font-family: var(--primary-font-size);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   color: var(--secondary-text-color);
   margin-right: 50px;
 }
@@ -89,13 +95,13 @@ li {
   font-family: var(--secondary-font-size);
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: #000000;
+  line-height: 1.2;
+  color: var(--logo-color-studio);
   margin-right: 95px;
   padding: 25px 0px;
 }
 .sub-logo {
-  color: #2196f3;
+  color: var(--logo-color-web);
 }
 
 .contacts {
@@ -110,12 +116,12 @@ li {
   font-family: var(--primary-font-size);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 }
 
 .contacts-list .link,
 .contacts-list .tel-link {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .tel-link:hover,
 .tel-link:focus {
@@ -131,7 +137,7 @@ li {
   color: var(--hover-color);
 }
 .link:active {
-  color: rgb(194, 55, 55);
+  color: var(--link-activ);
 }
 
 /* header end */
@@ -156,10 +162,10 @@ li {
   font-family: var(--primary-font-size);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--tertiary-text-color);
   letter-spacing: 0.06em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -170,15 +176,15 @@ li {
   width: 200px;
   height: 50px;
   margin-left: 485px;
-  background-color: #2196f3;
+  background-color: var(--button-bg-color);
   border: transparent;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--tertiary-text-color);
 }
 
 .features {
@@ -210,7 +216,7 @@ li {
   font-family: var(--primary-font-size);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -220,7 +226,7 @@ li {
 .features-text {
   font-family: var(--primary-font-size);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -234,7 +240,7 @@ li {
   font-family: var(--primary-font-size);
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -251,7 +257,7 @@ li {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--tertiary-bg-color);
   height: 648px;
 }
 
@@ -259,7 +265,7 @@ li {
   font-family: var(--primary-font-size);
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -280,7 +286,7 @@ li {
 .team-item {
   margin-right: 30px;
 
-  background-color: #ffffff;
+  background-color: var(--secondary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -294,7 +300,7 @@ li {
   font-family: var(--primary-font-size);
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -304,7 +310,7 @@ li {
 .item-descriptiom {
   font-family: var(--primary-font-size);
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -322,7 +328,7 @@ li {
 .map-footer:hover,
 .addres-footer:hover,
 .addres-footer:hover {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .footer .container {
@@ -331,15 +337,15 @@ li {
 }
 
 .footer-sub-logo {
-  color: #2196f3;
+  color: var(--logo-color-web);
 }
 
 .footer-logo {
   font-family: var(--secondary-font-size);
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: #ffffff;
+  line-height: 1.19;
+  color: var(--logo-color-studio-secondary);
 }
 
 .footer-cont {
@@ -349,8 +355,8 @@ li {
 address a {
   font-family: var(--primary-font-size);
   font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
+  line-height: 1.7;
+  color: var(--tertiary-text-color);
 }
 
 .addres-footer {
@@ -385,7 +391,7 @@ address a {
 
 .filter-button {
   cursor: pointer;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-button-bg-color);
   border-radius: 4px;
   border: transparent;
   margin: 0 8px;
@@ -393,7 +399,7 @@ address a {
 
 .filter-button:hover,
 .filter-button:focus {
-  background-color: #2196f3;
+  background-color: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -403,7 +409,7 @@ address a {
   font-family: var(--primary-font-size);
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -411,7 +417,7 @@ address a {
 }
 
 .filter-text:hover {
-  color: #ffffff;
+  color: var(--tertiary-text-color);
 }
 
 .content-list {
@@ -429,14 +435,14 @@ address a {
   margin-bottom: 30px;
   width: 370px;
   height: 400px;
-  border: 1px solid #eeeeee;
+  border: var(--border-color);
 }
 
 .content-title {
   font-family: var(--primary-font-size);
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   margin: 20px 24px 4px 24px;
@@ -445,7 +451,7 @@ address a {
 .content-text {
   font-family: var(--primary-font-size);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin: 0px 24px 20px 24px;
@@ -457,4 +463,14 @@ address a {
 
 /* filters start */
 
-/* filters end */ ;
+/* filters end */
+
+.addres-footer,
+.map {
+  font-style: normal;
+}
+
+.currentLink {
+  color: var(--primary-button-bg-color);
+  background-color: var(--logo-color-studio-secondary);
+}
